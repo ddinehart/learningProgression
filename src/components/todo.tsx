@@ -6,7 +6,7 @@ interface Props {
     todo: Todo;
 }
 
-const TodoCard = ({todo}: Props) => {
+const TodoItem = ({todo}: Props) => {
   return (
     <div >
       <input type="checkbox"/>
@@ -17,4 +17,4 @@ const TodoCard = ({todo}: Props) => {
   );
 }
 
-export default TodoCard
+export default TodoItem

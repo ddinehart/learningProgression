@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState }from 'react';
 import './App.css';
-import TodoCard from './components/todo';
+import TodoItem from './components/todo';
 
 
 export interface Todo {
@@ -38,7 +38,7 @@ const App = () => {
       <button onClick={handleAddTodo}>Add Todo</button>
     </div><div>
         {todoList.map((todo: Todo, key: number) => {
-          return <TodoCard key={key} todo={todo}/>;
+          return <TodoItem key={key} todo={todo}/>;
         })}
       </div></>
   );
